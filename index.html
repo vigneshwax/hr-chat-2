@@ -4,17 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vignesh - HR Assistant</title>
+    <title>Vignesh - HR AI Assistant</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js"></script>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore-compat.js"></script>
+
 </head>
 <body>
     <header>
         <nav>
-            <a href="#" class="logo">Vignesh - HR Assistant</a>
+            <a href="#" class="logo">Vignesh - HR AI Assistant</a>
+            <div id="auth-container">
+                <button id="login-button">Login</button>
+                <button id="logout-button" style="display:none;">Logout</button>
+            </div>
         </nav>
     </header>
     <main>
